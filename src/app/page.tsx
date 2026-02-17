@@ -60,11 +60,10 @@ export default function Home() {
     "May God continue to bless you with good health.❤️",
     "May you continue to make your parents proud.❤️",
     "May your children be proud to call you mummy.❤️",
-     "May your Prayers be answered.❤️",
+    "May your Prayers be answered.❤️",
     "Your home is blessed.❤️",
-    "I hope this gift of skill puts a smile on your face. ❤️",
-     "I hope this goes a long way. ❤️",
-
+    "I hope this goes a long way putting a smile on your face. ❤️",
+    "Thanks for everything! I'm grateful!. ❤️",
   ];
 
   const [prayerIndex, setPrayerIndex] = useState(0);
@@ -93,9 +92,8 @@ export default function Home() {
         {images.map((image, index) => (
           <div
             key={image}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              }`}
           >
             <Image
               src={image}
@@ -135,7 +133,7 @@ export default function Home() {
         {/* Messages */}
         <div className="space-y-6 mt-20 max-w-3xl">
           <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white drop-shadow-lg">
-            A Special Person On her <span className="text-pink-300 font-bold">Special Day</span>!
+            A Special Sister On her <span className="text-pink-300 font-bold">Special Day</span>!
           </p>
 
           <p className="mt-10 text-xl sm:text-2xl md:text-3xl font-bold text-yellow-100 drop-shadow-md animate-[bounce_4s_infinite]">
@@ -153,11 +151,10 @@ export default function Home() {
           {images.map((_, index) => (
             <div
               key={index}
-              className={`h-2.5 sm:h-3 rounded-full transition-all duration-700 ${
-                index === currentImageIndex
+              className={`h-2.5 sm:h-3 rounded-full transition-all duration-700 ${index === currentImageIndex
                   ? 'bg-gradient-to-r from-pink-500 to-rose-500 w-10 sm:w-12 shadow-lg shadow-pink-500/40'
                   : 'bg-white/40 w-2.5 sm:w-3'
-              }`}
+                }`}
             />
           ))}
         </div>
