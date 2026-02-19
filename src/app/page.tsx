@@ -51,6 +51,7 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
+    '/Images/Sister2.jpeg',
     '/Images/Sister.jpeg',
     '/Images/Folake2.jpeg',
     '/Images/Folake3.jpeg',
